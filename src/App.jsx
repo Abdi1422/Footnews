@@ -1,5 +1,5 @@
 import './app.scss';
-import Home from './pages/home';
+import Home from './pages/home.tsx';
 import Second from './pages/second'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Navbar from './components/navbar';
