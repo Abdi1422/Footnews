@@ -1,0 +1,36 @@
+.columns{
+    display: flex;
+    width: 100%;
+    height: 95%;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:30px;
+}
+.secondrow{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:30px;
+}
+.numbers,.played,.won,.draw,.loss,.gd,.points{
+    width: 10%;
+    height: 100%;
+    
+}
+.teams{
+    width: 30%;
+    height: 100%;
+}
+.numbers,.played,.won,.draw,.loss,.gd,.points{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teams{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
