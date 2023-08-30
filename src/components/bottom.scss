@@ -1,0 +1,92 @@
+.bottomframe{
+    width: 1000px;
+    height: 350px;
+    color:white;
+    padding-top: 20px;
+}
+.bottomimg{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.teamimg1,.teamimg2{
+    height: 200px;
+}
+.bottomwrap{
+    display: flex;
+}
+.bottomheader{
+    margin: 10px 0px;
+}
+.datediv{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.botwrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.vsh1{
+    position: relative;
+    bottom: 75px;
+}
+.otherteamimg{
+    width: 50px;
+}
+.fixdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    font-size: 10px;
+}
+.vstop{
+    position: relative;
+    bottom: 10px;
+}
+@media (max-width:1700px){
+    .bottomwrap{
+        flex-direction: column;
+    }
+    .datediv{
+        width: 65%;
+        padding: 0px 55px;
+    }
+}
+@media (max-width:1200px){
+    .bottomframe{
+        position: relative;
+        top: 350px;
+        left: 10px;
+        width: 100%;
+    }
+    .bottomwrap{
+        justify-content: center;
+        align-items: center;
+    }
+    .teamimg1,.teamimg2{
+        height: 50px;
+    }
+    .bottomimg{
+        justify-content: space-between;
+    }
+    .btmname , .vs{
+        font-size: 18px;
+    }
+    .vsh1{
+        font-size: 0px;
+    }
+    .datediv{  
+        padding: 0px 0px;
+    }
+}

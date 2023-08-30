@@ -1,0 +1,18 @@
+.tableframe{
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+}
+.tableheader{
+    width: 100%;
+    height: 35px;
+    color: white;
+    border-top:1px solid white;
+    font-weight: 700;
+    .numbers,.teams,.played,.won,.draw,.loss,.gd,.points{
+        display: flex;
+        align-items: center;
+        justify-content: unset;
+    }
+}
+

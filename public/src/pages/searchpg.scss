@@ -1,0 +1,25 @@
+.pgheader{
+    font-size: 60px;
+    color: white;
+}
+.pgimg{
+    height: 200px;
+    width: 200px;
+}
+.pgname{
+    color: white;
+}
+.pgmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
+    padding-top: 50px;
+}
+.stats{
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+}
