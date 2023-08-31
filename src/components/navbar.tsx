@@ -5,8 +5,17 @@ import logo from '../images/logo.png'
 import search from '../images/search.png'
 import { useState } from 'react';
 
+type proptypes ={
+    set:any;
+    set2:any;
+    set3:any;
+    set4:any;
+    set5:any;
+    set6:any;
+}
 
-const Navbar=({set,set2,set3,set4,set5,set6})=>{
+const Navbar=(props:proptypes)=>{
+    const {set,set2,set3,set4,set5,set6} = props
     const fetchapi=()=>{
         const url:string = `https://api-football-v1.p.rapidapi.com/v3/players?league=39&season=2022&search=${playersearch}`
         const options:object= {
