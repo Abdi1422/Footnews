@@ -6,7 +6,7 @@ import Bottom from '../components/bottom';
 import bgimg from '../video/bkvid.mp4'
 
 const Five =()=>{
-  const rows5= <>
+  const rows5:any= <>
                   <Row classname="row"num="1" tea="Napoli" pla='38' wo='28' dra='6	' los='4' g='49' pon='90'/>   
                   <Row classname="secondrow"num="2" tea="Lazio" pla='38' wo='22' dra='8' los='8' g='30' pon='74'/> 
                   <Row classname="row"num="3" tea="Inter Milan" pla='38' wo='23' dra='3' los='12' g='29' pon='72'/> 

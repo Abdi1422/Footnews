@@ -2,11 +2,11 @@ import './smalltable.scss';
 import injuryphoto from '../images/injury.png'
 import { useEffect, useState } from 'react';
 
-const Smalltable =({league})=> {
+const Smalltable =({league}:{league:number})=> {
     const fetchapi=()=>{
-        const randy= Math.floor(Math.random()* 1000 +1)
-        const url = `https://api-football-v1.p.rapidapi.com/v3/injuries?league=${league}&season=2022`
-        const options = {
+        const randy:number= Math.floor(Math.random()* 1000 +1)
+        const url:string = `https://api-football-v1.p.rapidapi.com/v3/injuries?league=${league}&season=2022`
+        const options:object = {
             method: 'GET',
             headers: {
                 'X-RapidAPI-Key': '9cb9b72ffdmsh672191178f9bacfp19548djsn33b7d9e09267',
@@ -30,11 +30,11 @@ const Smalltable =({league})=> {
     useEffect(()=>{
       fetchapi()
     },[])
-    const [dataimg,setdataimg]=useState([])
-    const [dataname,setdataname]=useState([])
-    const [datareason,setdatareason]=useState([])
-    const [datateam,setdatateam]=useState([])
-    const [datateamname,setdatateamname]=useState([])
+    const [dataimg,setdataimg]=useState<string>()
+    const [dataname,setdataname]=useState<string[]>([])
+    const [datareason,setdatareason]=useState<string[]>([])
+    const [datateam,setdatateam]=useState<string>()
+    const [datateamname,setdatateamname]=useState<string[]>([])
 
     return (
         <div className='smalltableframe'>

@@ -1,7 +1,20 @@
 import './row.scss';
 
-const Row=({num,tea,pla,wo,dra,los,g,pon,classname})=> {
-    
+type proptypes ={
+    num:string;
+    tea:any;
+    pla:string;
+    wo:string;
+    dra:string;
+    los:string;
+    g:string;
+    pon:string;
+    classname:string;
+}
+
+const Row=(props:proptypes)=> {
+    const {num,tea,pla,wo,dra,los,g,pon,classname} = props
+
     return (
             <div className={classname}>
                 <div className='columns'>

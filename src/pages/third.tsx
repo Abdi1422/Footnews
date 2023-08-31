@@ -6,7 +6,7 @@ import Bottom from '../components/bottom';
 import bgimg from '../video/bkvid.mp4'
 
 const Third=()=>{
-  const rows3= <>
+  const rows3:any= <>
                   <Row classname="row" num="1" tea="Psg" pla='38' wo='27' dra='4' los='7' g='49' pon='85'/>   
                   <Row classname="secondrow" num="2" tea="Lens" pla='38' wo='25' dra='9' los='4' g='39' pon='84'/> 
                   <Row classname="row" num="3" tea="Marseille" pla='38' wo='22' dra='7' los='9' g='27' pon='73'/> 

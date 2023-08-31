@@ -1,12 +1,12 @@
 import './bottom.scss';
 import { useEffect, useState } from 'react';
 
-const Bottom =({league})=> {
+const Bottom =({league}:{league:number})=> {
     const fetchteams =()=>{
-        const rand = Math.floor(Math.random()* 100 +1)
-        const rand2 = Math.floor(Math.random()* 100 +1)
-        const url = `https://api-football-v1.p.rapidapi.com/v3/fixtures?league=${league}&season=2023`;
-        const options= {
+        const rand:number = Math.floor(Math.random()* 100 +1)
+        const rand2:number = Math.floor(Math.random()* 100 +1)
+        const url:string = `https://api-football-v1.p.rapidapi.com/v3/fixtures?league=${league}&season=2023`;
+        const options:object= {
             method: 'GET',
             headers: {
                 'X-RapidAPI-Key': '9cb9b72ffdmsh672191178f9bacfp19548djsn33b7d9e09267',
@@ -36,16 +36,16 @@ const Bottom =({league})=> {
     useEffect(()=>{
         fetchteams()
     },[])
-    const [hometeam,sethometeam]=useState([])
-    const [awayteam,setawayteam]=useState([])
-    const [hometeamname,sethometeamname]=useState([])
-    const [awayteamname,setawayteamname]=useState([])
-    const [date,setdate]=useState([])
-    const [stadium,setstadium]=useState([])
-    const [hometeamname2,sethometeamname2]=useState([])
-    const [awayteamname2,setawayteamname2]=useState([])
-    const [hometeam2,sethometeam2]=useState([])
-    const [awayteam2,setawayteam2]=useState([])
+    const [hometeam,sethometeam]=useState<string>()
+    const [awayteam,setawayteam]=useState<string>()
+    const [hometeamname,sethometeamname]=useState<string[]>([])
+    const [awayteamname,setawayteamname]=useState<string[]>([])
+    const [date,setdate]=useState<string[]>([])
+    const [stadium,setstadium]=useState<string[]>([])
+    const [hometeamname2,sethometeamname2]=useState<string[]>([])
+    const [awayteamname2,setawayteamname2]=useState<string[]>([])
+    const [hometeam2,sethometeam2]=useState<string>()
+    const [awayteam2,setawayteam2]=useState<string>()
 
     return ( 
         <div className='bottomframe'>

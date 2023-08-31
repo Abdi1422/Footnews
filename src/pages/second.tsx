@@ -7,7 +7,7 @@ import Bottom from '../components/bottom';
 import bgimg from '../video/bkvid.mp4'
 
 const Second =()=>{
-  const rows2= <>
+  const rows2:any= <>
                   <Row classname="row" num="1" tea="Barcelona" pla='38' wo='28' dra='4' los='6' g='50' pon='88'/>   
                   <Row classname="secondrow" num="2" tea="Real madrid" pla='38' wo='24' dra='6' los='8' g='39' pon='78'/> 
                   <Row classname="row"num="3" tea="Atletico madrid" pla='38' wo='23' dra='8' los='7' g='37' pon='77'/> 

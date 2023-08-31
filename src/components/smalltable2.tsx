@@ -2,10 +2,10 @@ import './smalltable.scss';
 import bootphoto from '../images/boot.png'
 import { useEffect, useState } from 'react';
 
-const Smalltable2=({league})=> {
+const Smalltable2=({league}:{league:number})=> {
     const fetchapi=()=>{
-        const url2= `https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=${league}&season=2022`;
-        const options= {
+        const url2:string = `https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=${league}&season=2022`;
+        const options:object= {
             method: 'GET',
             headers: {
                 'X-RapidAPI-Key': '9cb9b72ffdmsh672191178f9bacfp19548djsn33b7d9e09267',
@@ -32,14 +32,14 @@ const Smalltable2=({league})=> {
     useEffect(()=>{
       fetchapi()
     },[])
-    const [dataimg2,setdataimg2]=useState([])
-    const [dataname2,setdataname2]=useState([])
-    const [datagoals,setdatagoals]=useState([])
-    const [datateam2,setdatateam2]=useState([])
-    const [dataleague2,setdataleague2]=useState([])  
-    const [datateamname2,setdatateamname2]=useState([])
-    const [datadribbles,setdatadribbles]=useState([])
-    const [dataduels,setdataduels]=useState([])
+    const [dataimg2,setdataimg2]=useState<string>()
+    const [dataname2,setdataname2]=useState<string[]>([])
+    const [datagoals,setdatagoals]=useState<string[]>([])
+    const [datateam2,setdatateam2]=useState<string>()
+    const [dataleague2,setdataleague2]=useState<string[]>([])  
+    const [datateamname2,setdatateamname2]=useState<string[]>([])
+    const [datadribbles,setdatadribbles]=useState<string[]>([])
+    const [dataduels,setdataduels]=useState<string[]>([])
     return (
         <div className='smalltableframe'>
             <div className='imgdiv'>

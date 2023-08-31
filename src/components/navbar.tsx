@@ -8,8 +8,8 @@ import { useState } from 'react';
 
 const Navbar=({set,set2,set3,set4,set5,set6})=>{
     const fetchapi=()=>{
-        const url= `https://api-football-v1.p.rapidapi.com/v3/players?league=39&season=2022&search=${playersearch}`
-        const options= {
+        const url:string = `https://api-football-v1.p.rapidapi.com/v3/players?league=39&season=2022&search=${playersearch}`
+        const options:object= {
             method: 'GET',
             headers: {
                 'X-RapidAPI-Key': '9cb9b72ffdmsh672191178f9bacfp19548djsn33b7d9e09267',
@@ -65,7 +65,6 @@ const Navbar=({set,set2,set3,set4,set5,set6})=>{
                 <input type="text" placeholder="Enter premier league player" className="search" onChange={(e)=> setplayersearch(e.target.value)} />
                 <Link to="6" className='searchlink'><button className='searchbtn' onClick={fetchapi} ><img src={search} className='searchimg'/></button></Link>
             </div>
-            
         </nav>
         </>
     )
