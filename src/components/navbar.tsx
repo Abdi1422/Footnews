@@ -64,7 +64,7 @@ const Navbar=(props:proptypes)=>{
         </div>
         <nav className='nav'>
             <div className='leagbtn'>
-                <Link to="/test/" className='link'><button className='btn'>Epl</button></Link>
+                <Link to="/Footnews/" className='link'><button className='btn'>Epl</button></Link>
                 <Link to="2" className='link'><button className='btn'>La liga</button></Link>
                 <Link to="3" className='link'><button className='btn'>Ligue 1</button></Link>
                 <Link to="4" className='link'><button className='btn'>Bundesliga</button></Link>
