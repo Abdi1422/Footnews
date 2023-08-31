@@ -1,7 +1,18 @@
 import './searchpg.scss'
 import bgimg from '../video/bkvid.mp4'
 
-const Searchpg=({searchedimg,searchedname,searchedgoals,searchedapp,searcheddri,searchedduel})=>{
+type proptypes ={
+    searchedimg:any;
+    searchedname:any;
+    searchedgoals:any;
+    searchedapp:any;
+    searcheddri:any;
+    searchedduel:any;
+}
+
+const Searchpg=(props:proptypes)=>{
+    const {searchedimg,searchedname,searchedgoals,searchedapp,searcheddri,searchedduel}= props
+
     return(
         <>
         <div className='bk'>
