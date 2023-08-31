@@ -21,7 +21,7 @@ const App =()=> {
     <BrowserRouter>
       <Navbar set={setplayerimg} set2={setplayername} set3={setplayergoals} set4={setplayerapp} set5={setplayerdri} set6={setplayerduel}/>    
         <Routes>
-          <Route path='/Footnews/' element={<Home />}/>
+          <Route path='/test/' element={<Home />}/>
           <Route path='2' element={<Second />}/>
           <Route path='3' element={<Third />}/>
           <Route path='4' element={<Four />}/>
