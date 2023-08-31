@@ -10,12 +10,12 @@ import Searchpg from './pages/searchpg';
 import { useState } from 'react';
 
 const App =()=> {
-  const [playerimg,setplayerimg]=useState<string>([])
-  const [playername,setplayername]=useState<string>([])
-  const [playergoals,setplayergoals]=useState<string>([])
-  const [playerapp,setplayerapp]=useState<string>([])
-  const [playerdri,setplayerdri]=useState<string>([])
-  const [playerduel,setplayerduel]=useState<string>([])
+  const [playerimg,setplayerimg]=useState([])
+  const [playername,setplayername]=useState([])
+  const [playergoals,setplayergoals]=useState([])
+  const [playerapp,setplayerapp]=useState([])
+  const [playerdri,setplayerdri]=useState([])
+  const [playerduel,setplayerduel]=useState([])
   return (
    <div className='bg'>
     <BrowserRouter>
